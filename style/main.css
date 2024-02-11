@@ -1,0 +1,1432 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Courier Prime", monospace;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container {
+  position: relative;
+  max-width: 1550px;
+  overflow: hidden;
+}
+.container header nav {
+  display: flex;
+  justify-content: space-between;
+}
+.container header nav .left {
+  padding: 31px 0 0 94px;
+}
+.container header nav .right {
+  display: flex;
+  gap: 38px;
+}
+.container header nav .right ul {
+  padding: 32px 0;
+  display: flex;
+  gap: 32px;
+}
+.container header nav .right ul li {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+.container header nav .right button {
+  background-color: #ff90e8;
+  border: none;
+  border-left: 1px solid black;
+  padding: 12px 30px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  cursor: pointer;
+}
+.container header nav .right button:hover {
+  background-color: #f4abe4;
+}
+.container header nav .right button:active {
+  background-color: #ff90e8;
+}
+.container header nav .right .bars {
+  display: none;
+}
+.container header .barsBlock {
+  height: 90vh;
+  display: none;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+.container header .header_main {
+  display: flex;
+}
+.container header .header_main .left {
+  height: 86.5vh;
+  width: 42%;
+  padding: 112px 100px 186px 100px;
+  background-color: #ff90e8;
+  border: 1px solid #000000;
+  border-right: none;
+}
+.container header .header_main .left h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 68px;
+  font-weight: 500;
+}
+.container header .header_main .left p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.container header .header_main .left .buttons {
+  margin-top: 46px;
+}
+.container header .header_main .left .buttons :first-child {
+  background-color: #000000;
+  border: none;
+  padding: 12px 28px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  cursor: pointer;
+}
+.container header .header_main .left .buttons :first-child:hover {
+  opacity: 0.8;
+}
+.container header .header_main .left .buttons :first-child:active {
+  opacity: 1;
+}
+.container header .header_main .left .buttons :last-child {
+  padding: 12px 28px;
+  border: 1px solid #121212;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  cursor: pointer;
+}
+.container header .header_main .left .buttons :last-child:hover {
+  opacity: 0.8;
+}
+.container header .header_main .left .buttons :last-child:active {
+  opacity: 1;
+}
+.container header .header_main .right {
+  width: 58%;
+  background-color: #ffc900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000000;
+}
+.container header .header_main .right .box {
+  width: 410px;
+}
+.container header .header_main .right .box .image {
+  width: 100%;
+  height: 390px;
+}
+.container header .header_main .right .box .image img {
+  width: 100%;
+  height: 100%;
+}
+.container header .header_main .right .box .title {
+  padding: 28px 40px 28px 32px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container header .header_main .right .box .title .left_part h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  text-align: left;
+}
+.container header .header_main .right .box .title .left_part p {
+  font-size: 18px;
+  font-weight: 700;
+}
+.container header .header_main .right .box .title .right_part {
+  padding: 12px 14px;
+  background-color: #ff90e8;
+  border: 1px solid #121212;
+  font-size: 16px;
+  font-weight: 400;
+}
+.container main .popular_artists {
+  padding: 80px 96px 90px 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.container main .popular_artists .title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.container main .popular_artists .title p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.container main .popular_artists .boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.container main .popular_artists .boxes .box {
+  width: 300px;
+  border: 1px solid #000000;
+}
+.container main .popular_artists .boxes .box .image {
+  width: 100%;
+  height: 130px;
+}
+.container main .popular_artists .boxes .box .image img {
+  width: 100%;
+  height: 100%;
+}
+.container main .popular_artists .boxes .box .sub_title {
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #000000;
+}
+.container main .popular_artists .boxes .box .sub_title .profile_image {
+  width: 36px;
+}
+.container main .popular_artists .boxes .box .sub_title .profile_image img {
+  width: 100%;
+  border-radius: 50%;
+}
+.container main .popular_artists .boxes .box .sub_title .profile_info h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+.container main .popular_artists .boxes .box .sub_title .profile_info p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+}
+.container main .popular_artists .boxes .box .sub_title button {
+  height: 32px;
+  padding: 0px 12px;
+  background-color: #6fedd6;
+  border: 1px solid #121212;
+  margin-left: 26px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+}
+.container main .popular_nfts .popular_nfts_header .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container main .popular_nfts .popular_nfts_header .title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+}
+.container main .popular_nfts .popular_nfts_header .title p {
+  width: 40%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.container main .popular_nfts .popular_nfts_header .navigation_panel {
+  padding: 68px 190px 68px 260px;
+  display: flex;
+  gap: 24px;
+}
+.container main .popular_nfts .popular_nfts_header .navigation_panel button {
+  padding: 12px 24px;
+  border-radius: 32px;
+  border: 1px solid black;
+  background-color: white;
+  gap: 14px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  cursor: pointer;
+}
+.container main .popular_nfts .popular_nfts_header .navigation_panel button:hover {
+  background-color: rgb(241, 235, 235);
+}
+.container main .popular_nfts .popular_nfts_header .navigation_panel button:first-child {
+  background-color: #ff90e8;
+}
+.container main .popular_nfts .popular_nfts_boxes {
+  padding: 0 94px 80px 94px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  row-gap: 22px;
+}
+.container main .popular_nfts .popular_nfts_boxes .box {
+  width: 400px;
+  border: 1px solid #121212;
+}
+.container main .popular_nfts .popular_nfts_boxes .box .image {
+  width: 100%;
+}
+.container main .popular_nfts .popular_nfts_boxes .box .image img {
+  width: 100%;
+}
+.container main .popular_nfts .popular_nfts_boxes .box .box_info {
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.container main .popular_nfts .popular_nfts_boxes .box .box_info .top h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.container main .popular_nfts .popular_nfts_boxes .box .box_info .top p {
+  font-family: Courier New;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.container main .popular_nfts .popular_nfts_boxes .box .box_info .top p span {
+  color: #505050;
+  font-weight: 400;
+}
+.container main .popular_nfts .popular_nfts_boxes .box .box_info hr {
+  border: #121212 1px solid;
+}
+.container main .popular_nfts .popular_nfts_boxes .box .box_info .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.container main .popular_nfts .popular_nfts_boxes .box .box_info .bottom .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container main .popular_nfts .popular_nfts_boxes .box .box_info .bottom .profile img {
+  width: 28px;
+  border-radius: 50%;
+}
+.container main .popular_nfts .popular_nfts_boxes .box .box_info .bottom .timer {
+  padding: 3px 18px;
+  background-color: #ffdf68;
+  border: 1px solid black;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+}
+.container main .statistics {
+  padding: 86px 168px 86px 168px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid #000000;
+}
+.container main .statistics .stats h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 78px;
+  font-weight: 500;
+  line-height: 88px;
+  letter-spacing: -0.02em;
+}
+.container main .statistics .stats p {
+  color: #8b8b8b;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+.container main .experience {
+  padding: 86px 0;
+  background-color: #ffc900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.container main .experience h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+}
+.container main .experience p {
+  width: 570px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.container main .experience button {
+  padding: 12px 28px;
+  background-color: transparent;
+  border: 1px solid #121212;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+.container main .experience button:active {
+  background-color: #121212;
+  color: white;
+}
+.container main .shop {
+  width: 100%;
+  display: flex;
+  border: 1px solid #000000;
+  border-left: none;
+  border-right: none;
+}
+.container main .shop .left {
+  width: 50%;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #23a094;
+  border-right: 1px solid #000000;
+}
+.container main .shop .left .image {
+  width: 500px;
+}
+.container main .shop .left .image img {
+  width: 100%;
+}
+.container main .shop .right {
+  width: 50%;
+  padding: 70px 100px 44px 64px;
+  background-color: #ff90e8;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+.container main .shop .right .box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container main .shop .right .box .circle {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.container main .shop .right .box h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.container main .shop .right .box p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.container main .about_nft {
+  padding: 80px 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.container main .about_nft .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container main .about_nft .title .title_left h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 56px;
+}
+.container main .about_nft .title .title_left p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.container main .about_nft .title .title_right button {
+  padding: 12px 28px;
+  background-color: #6fedd6;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.container main .about_nft .boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.container main .about_nft .boxes .box {
+  width: 400px;
+  border: 1px solid #000000;
+}
+.container main .about_nft .boxes .box .image {
+  width: 100%;
+  height: 230px;
+}
+.container main .about_nft .boxes .box .image img {
+  width: 100%;
+  height: 100%;
+}
+.container main .about_nft .boxes .box .box_info {
+  padding: 24px 14px 25px 30px;
+  border-top: 1px solid #000000;
+}
+.container main .about_nft .boxes .box .box_info h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.container main .about_nft .boxes .box .box_info .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.container main .about_nft .boxes .box .box_info .bottom p {
+  color: #505050;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.container main .marketplace {
+  background-color: #6fedd6;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.container main .marketplace h3 {
+  max-width: 650px;
+  font-family: "Poppins", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  text-align: center;
+}
+.container main .marketplace .buttons {
+  display: flex;
+  gap: 24px;
+}
+.container main .marketplace .buttons button {
+  padding: 12px 28px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.container main .marketplace .buttons button:first-child {
+  background-color: #ff90e8;
+  border: 1px solid black;
+  font-size: 22px;
+  font-weight: 400;
+}
+.container main .marketplace .buttons button:last-child {
+  background-color: #121212;
+  color: white;
+  border: 1px solid black;
+}
+.container footer {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 48px 96px 72px 96px;
+  background-color: #e6e6e6;
+}
+.container footer .left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.container footer .left h3 {
+  color: #505050;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+.container footer .left form {
+  width: 610px;
+  display: flex;
+  border: 1px solid black;
+}
+.container footer .left form input {
+  width: 100%;
+  padding: 18px 24px;
+}
+.container footer .left form button {
+  padding: 18px 28px;
+  background-color: #ff90e8;
+  border: 1px solid black;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.container footer .right {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 18px;
+}
+.container footer .right .icons {
+  display: flex;
+  gap: 20px;
+  color: #8f8f8f;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 448px) {
+  .container header nav .left {
+    padding: 40px 0 0 26px;
+  }
+  .container header nav .right ul {
+    display: none;
+  }
+  .container header nav .right button {
+    display: none;
+  }
+  .container header nav .right .bars {
+    display: inline-block;
+    padding: 37px 26px 0 0;
+    font-size: 24px;
+    color: #ff90e8;
+  }
+  .container header nav .barsBlock {
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px 20px 0 0;
+    transition: all 0.3s ease;
+  }
+  .container header nav .barsBlock ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container header nav .barsBlock ul li {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.04em;
+    text-align: center;
+  }
+  .container header nav .barsBlock button {
+    background-color: #ff90e8;
+    border: none;
+    border-left: 1px solid black;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    margin-top: 10px;
+  }
+  .container header nav .barsBlock.active {
+    right: 0;
+  }
+  .container header .header_main {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .container header .header_main .left {
+    height: 436px;
+    width: 100%;
+    padding: 90px 60px 112px 55px;
+    background-color: #ff90e8;
+    border: none;
+    border-right: none;
+  }
+  .container header .header_main .left h1 {
+    font-size: 40px;
+  }
+  .container header .header_main .left p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .container header .header_main .left .buttons {
+    margin-top: 46px;
+  }
+  .container header .header_main .left .buttons :first-child {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .container header .header_main .left .buttons :last-child {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .container header .header_main .right {
+    width: 100%;
+    border: none;
+    padding: 40px 0;
+  }
+  .container header .header_main .right .box {
+    width: 238px;
+  }
+  .container header .header_main .right .box .image {
+    width: 100%;
+    height: 212px;
+  }
+  .container header .header_main .right .box .image img {
+    width: 100%;
+    height: 100%;
+  }
+  .container header .header_main .right .box .title {
+    padding: 13px 40px 16px 16px;
+  }
+  .container header .header_main .right .box .title .left_part h2 {
+    font-size: 14px;
+  }
+  .container header .header_main .right .box .title .left_part p {
+    font-size: 12px;
+  }
+  .container header .header_main .right .box .title .right_part {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+  .container main .popular_artists {
+    padding: 44px 24px 48px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+  .container main .popular_artists .title h2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .container main .popular_artists .title p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .container main .popular_artists .boxes {
+    justify-content: center;
+    gap: 10px;
+    row-gap: 24px;
+  }
+  .container main .popular_artists .boxes .box {
+    width: 180px;
+    height: auto;
+  }
+  .container main .popular_artists .boxes .box .image {
+    height: 70px;
+  }
+  .container main .popular_artists .boxes .box .sub_title {
+    padding: 10px 6px;
+    gap: 10px;
+  }
+  .container main .popular_artists .boxes .box .sub_title .profile_image {
+    width: 36px;
+  }
+  .container main .popular_artists .boxes .box .sub_title .profile_image img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .container main .popular_artists .boxes .box .sub_title .profile_info h3 {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .container main .popular_artists .boxes .box .sub_title .profile_info p {
+    font-size: 7px;
+    line-height: 12px;
+  }
+  .container main .popular_artists .boxes .box .sub_title button {
+    height: 18px;
+    padding: 0px 6px;
+    margin-left: 2px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .container main .popular_nfts .popular_nfts_header .title h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .container main .popular_nfts .popular_nfts_header .title p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 7px;
+  }
+  .container main .popular_nfts .popular_nfts_header .navigation_panel {
+    padding: 16px 30px 16px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  .container main .popular_nfts .popular_nfts_header .navigation_panel button {
+    padding: 8px 10px;
+    gap: 14px;
+    font-size: 14px;
+  }
+  .container main .popular_nfts .popular_nfts_boxes {
+    padding: 0 20px 24px 20px;
+  }
+  .container main .popular_nfts .popular_nfts_boxes .box .image img {
+    height: 300px;
+  }
+  .container main .popular_nfts .popular_nfts_boxes .box .box_info {
+    gap: 18px;
+  }
+  .container main .popular_nfts .popular_nfts_boxes .box .box_info .top h3 {
+    font-size: 22px;
+  }
+  .container main .statistics {
+    padding: 64px;
+    gap: 70px;
+    justify-content: center;
+  }
+  .container main .statistics .stats h3 {
+    font-size: 36px;
+    line-height: 30px;
+  }
+  .container main .statistics .stats p {
+    font-size: 12px;
+  }
+  .container main .experience {
+    padding: 86px 36px;
+  }
+  .container main .experience h3 {
+    text-align: center;
+  }
+  .container main .experience p {
+    width: 100%;
+  }
+  .container main .shop {
+    flex-direction: column;
+  }
+  .container main .shop .left {
+    width: 100%;
+    height: 410px;
+  }
+  .container main .shop .left .image {
+    width: 70%;
+  }
+  .container main .shop .right {
+    width: 100%;
+    padding: 40px 70px 54px 38px;
+    gap: 40px;
+  }
+  .container main .shop .right .box {
+    gap: 12px;
+  }
+  .container main .shop .right .box .circle {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+  }
+  .container main .shop .right .box h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .container main .shop .right .box p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .container main .about_nft {
+    display: none;
+  }
+  .container footer {
+    flex-direction: column;
+    padding: 28px 24px 42px 20px;
+    gap: 28px;
+  }
+  .container footer .left {
+    gap: 8px;
+  }
+  .container footer .left h3 {
+    font-size: 16px;
+  }
+  .container footer .left form {
+    width: 100%;
+  }
+  .container footer .left form input {
+    width: 100%;
+    padding: 12px 14px;
+  }
+  .container footer .left form button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .container footer .right .copyright {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container header .header_main .left {
+    height: auto;
+    width: 100%;
+    padding: 30px 10px 20px 10px;
+    border: none;
+    border-right: none;
+  }
+  .container header .header_main .left h1 {
+    font-size: 40px;
+  }
+  .container header .header_main .left p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .container header .header_main .left .buttons {
+    margin-top: 46px;
+  }
+  .container header .header_main .left .buttons :first-child {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .container header .header_main .left .buttons :last-child {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 448px) and (max-width: 768px) {
+  .container header nav .left {
+    padding: 40px 0px 0 26px;
+  }
+  .container header nav .right ul {
+    display: none;
+  }
+  .container header nav .right button {
+    display: none;
+  }
+  .container header nav .right .bars {
+    display: inline-block;
+    padding: 37px 26px 0 0;
+    font-size: 24px;
+    color: #ff90e8;
+  }
+  .container header nav .barsBlock {
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px 20px 0 0;
+    transition: all 0.3s ease;
+  }
+  .container header nav .barsBlock ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container header nav .barsBlock ul li {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.04em;
+    text-align: center;
+  }
+  .container header nav .barsBlock button {
+    background-color: #ff90e8;
+    border: none;
+    border-left: 1px solid black;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    margin-top: 10px;
+  }
+  .container header nav .barsBlock.active {
+    right: 0;
+  }
+  .container header .header_main {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .container header .header_main .left {
+    height: auto;
+    width: 100%;
+    padding: 90px 60px 112px 55px;
+    background-color: #ff90e8;
+    border: none;
+    border-right: none;
+  }
+  .container header .header_main .left h1 {
+    font-size: 44px;
+  }
+  .container header .header_main .left p {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  .container header .header_main .left .buttons {
+    margin-top: 30px;
+  }
+  .container header .header_main .left .buttons :first-child {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+  .container header .header_main .left .buttons :last-child {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+  .container header .header_main .right {
+    width: 100%;
+    border: none;
+    padding: 40px 0;
+  }
+  .container header .header_main .right .box {
+    width: 288px;
+  }
+  .container header .header_main .right .box .image {
+    width: 100%;
+    height: 262px;
+  }
+  .container header .header_main .right .box .image img {
+    width: 100%;
+    height: 100%;
+  }
+  .container header .header_main .right .box .title {
+    padding: 16px 40px 16px 16px;
+  }
+  .container header .header_main .right .box .title .left_part h2 {
+    font-size: 16px;
+  }
+  .container header .header_main .right .box .title .left_part p {
+    font-size: 14px;
+  }
+  .container header .header_main .right .box .title .right_part {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+  .container main .popular_artists {
+    padding: 44px 24px 48px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+  .container main .popular_artists .title h2 {
+    font-size: 26px;
+    line-height: 50px;
+  }
+  .container main .popular_artists .title p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .container main .popular_artists .boxes {
+    justify-content: center;
+    gap: 50px;
+    row-gap: 24px;
+  }
+  .container main .popular_artists .boxes .box {
+    width: 240px;
+    height: auto;
+  }
+  .container main .popular_artists .boxes .box .image {
+    height: 100px;
+  }
+  .container main .popular_artists .boxes .box .sub_title {
+    padding: 10px 6px;
+    gap: 10px;
+  }
+  .container main .popular_artists .boxes .box .sub_title .profile_image {
+    width: 36px;
+  }
+  .container main .popular_artists .boxes .box .sub_title .profile_image img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .container main .popular_artists .boxes .box .sub_title .profile_info h3 {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .container main .popular_artists .boxes .box .sub_title .profile_info p {
+    font-size: 7px;
+    line-height: 12px;
+  }
+  .container main .popular_artists .boxes .box .sub_title button {
+    height: 18px;
+    padding: 0px 6px;
+    margin-left: 2px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .container main .popular_nfts .popular_nfts_header .title h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .container main .popular_nfts .popular_nfts_header .title p {
+    width: 90%;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 7px;
+  }
+  .container main .popular_nfts .popular_nfts_header .navigation_panel {
+    padding: 16px 30px 16px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  .container main .popular_nfts .popular_nfts_header .navigation_panel button {
+    padding: 10px 12px;
+    gap: 14px;
+    font-size: 16px;
+  }
+  .container main .popular_nfts .popular_nfts_boxes {
+    padding: 0 0 24px 0px;
+  }
+  .container main .popular_nfts .popular_nfts_boxes .box {
+    width: 300px;
+    height: auto;
+  }
+  .container main .popular_nfts .popular_nfts_boxes .box .image img {
+    height: 280px;
+  }
+  .container main .popular_nfts .popular_nfts_boxes .box .box_info {
+    gap: 18px;
+  }
+  .container main .popular_nfts .popular_nfts_boxes .box .box_info .top h3 {
+    font-size: 22px;
+  }
+  .container main .statistics {
+    padding: 64px;
+    gap: 70px;
+    justify-content: center;
+  }
+  .container main .statistics .stats h3 {
+    font-size: 44px;
+    line-height: 40px;
+  }
+  .container main .statistics .stats p {
+    font-size: 18px;
+  }
+  .container main .shop {
+    flex-direction: column;
+  }
+  .container main .shop .left {
+    width: 100%;
+    height: 510px;
+  }
+  .container main .shop .left .image {
+    width: 50%;
+  }
+  .container main .shop .right {
+    width: 100%;
+    padding: 40px 70px 54px 38px;
+    gap: 40px;
+  }
+  .container main .shop .right .box {
+    gap: 12px;
+  }
+  .container main .shop .right .box .circle {
+    width: 38px;
+    height: 38px;
+    font-size: 22px;
+  }
+  .container main .shop .right .box h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .container main .shop .right .box p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .container main .about_nft {
+    display: none;
+  }
+  .container footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 24px 42px 20px;
+    gap: 48px;
+  }
+  .container footer .left {
+    width: 80%;
+    gap: 8px;
+  }
+  .container footer .left h3 {
+    font-size: 16px;
+  }
+  .container footer .left form {
+    width: 100%;
+  }
+  .container footer .left form input {
+    width: 100%;
+    padding: 14px 16px;
+  }
+  .container footer .left form button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .container footer .right .copyright {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container header nav .left {
+    padding: 31px 0 0px 20px;
+  }
+  .container header nav .right {
+    display: flex;
+    gap: 38px;
+  }
+  .container header nav .right ul {
+    padding: 32px 0;
+    display: flex;
+    gap: 32px;
+  }
+  .container header nav .right ul li {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.04em;
+    text-align: center;
+  }
+  .container header nav .right button {
+    background-color: #ff90e8;
+    border: none;
+    border-left: 1px solid black;
+    padding: 12px 30px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+  }
+  .container header nav .right .bars {
+    display: none;
+  }
+  .container header .barsBlock {
+    display: none;
+  }
+  .container header .header_main {
+    display: flex;
+    height: 87.5vh;
+  }
+  .container header .header_main .left {
+    height: 100%;
+    width: 46%;
+    padding: 52px 30px 186px 30px;
+  }
+  .container header .header_main .left h1 {
+    font-size: 50px;
+  }
+  .container header .header_main .left p {
+    font-size: 20px;
+  }
+  .container header .header_main .left .buttons {
+    margin-top: 46px;
+  }
+  .container header .header_main .left .buttons :first-child {
+    padding: 10px 26px;
+    font-size: 18px;
+  }
+  .container header .header_main .left .buttons :last-child {
+    padding: 10px 26px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .container header .header_main .right {
+    width: 54%;
+    background-color: #ffc900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+  }
+  .container header .header_main .right .box {
+    width: 410px;
+  }
+  .container header .header_main .right .box .image {
+    width: 100%;
+    height: 390px;
+  }
+  .container header .header_main .right .box .image img {
+    width: 100%;
+    height: 100%;
+  }
+  .container header .header_main .right .box .title {
+    padding: 28px 40px 28px 32px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container header .header_main .right .box .title .left_part h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: left;
+  }
+  .container header .header_main .right .box .title .left_part p {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .container header .header_main .right .box .title .right_part {
+    padding: 12px 14px;
+    background-color: #ff90e8;
+    border: 1px solid #121212;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .container main .popular_nfts .popular_nfts_header .title h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .container main .popular_nfts .popular_nfts_header .title p {
+    width: 90%;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 7px;
+  }
+  .container main .popular_nfts .popular_nfts_header .navigation_panel {
+    padding: 16px 30px 16px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  .container main .popular_nfts .popular_nfts_header .navigation_panel button {
+    padding: 10px 12px;
+    gap: 14px;
+    font-size: 16px;
+  }
+  .container main .popular_nfts .popular_nfts_boxes {
+    padding: 0 0 24px 0px;
+  }
+  .container main .popular_nfts .popular_nfts_boxes .box {
+    width: 300px;
+    height: auto;
+  }
+  .container main .popular_nfts .popular_nfts_boxes .box .image img {
+    height: 280px;
+  }
+  .container main .popular_nfts .popular_nfts_boxes .box .box_info {
+    gap: 18px;
+  }
+  .container main .popular_nfts .popular_nfts_boxes .box .box_info .top h3 {
+    font-size: 22px;
+  }
+  .container main .statistics {
+    gap: 100px;
+    justify-content: center;
+  }
+  .container main .shop {
+    flex-direction: column;
+  }
+  .container main .shop .left {
+    width: 100%;
+    height: 610px;
+  }
+  .container main .shop .left .image {
+    width: 45%;
+  }
+  .container main .shop .right {
+    width: 100%;
+    padding: 40px 70px 54px 38px;
+    gap: 40px;
+  }
+  .container main .shop .right .box {
+    gap: 12px;
+  }
+  .container main .shop .right .box .circle {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+  .container main .shop .right .box h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .container main .shop .right .box p {
+    font-size: 22px;
+    line-height: 34px;
+  }
+  .container main .about_nft {
+    padding: 80px 20px;
+    gap: 56px;
+  }
+  .container main .about_nft .boxes {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .container footer {
+    padding: 50px 20px 50px 20px;
+  }
+  .container footer .left {
+    gap: 8px;
+  }
+  .container footer .left form {
+    width: 510px;
+    display: flex;
+    border: 1px solid black;
+  }
+  .container footer .left form input {
+    width: 100%;
+    padding: 18px 24px;
+  }
+  .container footer .left form button {
+    padding: 16px 20px;
+    font-size: 20px;
+  }
+  .container footer .right .copyright {
+    text-align: end;
+  }
+}/*# sourceMappingURL=main.css.map */
